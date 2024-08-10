@@ -1,7 +1,9 @@
+import Board from "./components/Board"
+
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div  className="flex bg-[url('/background.svg')]  h-screen justify-center items-center" >
+      <Board/>
+    </div>
   )
 }
