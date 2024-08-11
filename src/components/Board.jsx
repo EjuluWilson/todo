@@ -9,7 +9,7 @@ export default function Board() {
         <Input placeholder="Enter todo " className=" ml-2 "></Input>
         <Button className="mr-2">Add</Button>
       </div>
-      <div className=" bg-white mt-3 flex-grow  lg:flex lg:items-start lg:flex-wrap lg:justify-center">
+      <div className=" bg-white mt-3 flex-grow  lg:flex lg:items-start lg:flex-wrap lg:justify-center overflow-auto">
         <Todo/>
         <Todo/>
         <Todo/>
