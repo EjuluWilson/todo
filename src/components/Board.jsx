@@ -35,7 +35,7 @@ export default function Board() {
 
         <Button className="mr-2">Add</Button>
       </form>
-      <div className=" bg-white overflow-auto content-start mt-3 flex-grow justify-around lg:flex lg:flex-wrap">
+      <div className=" bg-white overflow-auto content-start mt-3 flex-grow justify-between lg:flex lg:flex-wrap">
         {todos.map((item, index) => (
           <Todo key={index} todo={item} />
         ))}
