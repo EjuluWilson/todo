@@ -16,10 +16,12 @@ export default function Board() {
   function handleSubmit(event) {
     event.preventDefault();
 
-    setTodos((prevTodos) => {
-      return [...prevTodos, todo];
-    });
-    setTodo("");
+    if (todo.length > 0) {
+      setTodos((prevTodos) => {
+        return [...prevTodos, todo];
+      });
+      setTodo("");
+    }
   }
 
   //Handle todo deletion
